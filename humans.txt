@@ -1,0 +1,37 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+	Viget Labs, LLC
+	Falls Church, VA
+	Durham, NC
+	Boulder, CO
+	
+	Project Manager: 
+	Email: 
+	Location: 
+	
+	User Experience Designer: 
+	Email: 
+	Twitter: 
+	Location: 
+	
+	Designer: 
+	Email: 
+	Twitter: 
+	Location: 
+	
+	Front-End Developer: Jeremy Fields
+	Email: jeremy.fields@viget.com
+	Twitter: @ten1seven
+	Location: Boulder, CO
+	
+	Developer: Patrick Reagan
+	Email: 
+	Twitter: 
+	Location: 
+
+/* SITE */
+	Standards: HTML5, CSS3
+	Components: jQuery
