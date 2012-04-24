@@ -4,15 +4,15 @@
   Author: Jeremy Fields, Viget Labs
 */
 
-var TL = TL || {};
+var PB = PB || {};
 
 (function() {
 	var body = document.body;
 	
-	TL.controller = body.getAttribute('data-controller').toLowerCase();
-	TL.action = body.getAttribute('data-action').toLowerCase();
+	PB.controller = body.getAttribute('data-controller').toLowerCase();
+	PB.action = body.getAttribute('data-action').toLowerCase();
 })();
 
-TL.loadScripts = function(controller,action) {
+PB.loadScripts = function(controller,action) {
 	$LAB.script([_base._global,pages[controller][action].depends],pages[controller][action].url);
 };

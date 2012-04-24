@@ -4,13 +4,13 @@
   Author: Jeremy Fields, Viget Labs
 */
 
-var TL = TL || {};
+var PB = PB || {};
 
 (function () {
 
 	'use strict';
 	
-	TL.Util = {
+	PB.Util = {
 		
 		'init': function() {
 			
@@ -20,16 +20,16 @@ var TL = TL || {};
 		
 	};
 		
-	TL.Global = {
+	PB.Global = {
 		
 		vars: {
-			var1: 'hello world!'
+			var1: 'global.js init'
 		},
 		
 		'init': function() {
 			
 			// do stuff here
-			log(this.vars.var1);
+			console.log(PB.Global.var1);
 			
 		},
 		
@@ -44,4 +44,4 @@ var TL = TL || {};
 
 }());
 
-$(function() { TL.Global.init() });
+$(function() { PB.Global.init() });

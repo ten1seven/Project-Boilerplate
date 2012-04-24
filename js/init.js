@@ -8,10 +8,10 @@ $LAB.script('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js','js/bootstr
 	if (typeof window.jQuery === 'undefined') {
 		
 		// first load failed, load local fallback, then dependencies  
-		$LAB.script('js/jquery.min.js').wait(TL.loadScripts(TL.controller,TL.action));  
+		$LAB.script('js/libs/jquery-1.7.2.min.js').wait(PB.loadScripts(PB.controller,PB.action));  
 	} else {
 		
 		// first load was a success, proceed to loading dependencies
-		TL.loadScripts(TL.controller,TL.action);
+		PB.loadScripts(PB.controller,PB.action);
 	}
 });

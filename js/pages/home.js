@@ -4,22 +4,22 @@
   Author: Jeremy Fields, Viget Labs
 */
 
-var TL = TL || {};
+var PB = PB || {};
 
 (function () {
 
 	'use strict';
 		
-	TL.Home = {
+	PB.Home = {
 		
 		vars: {
-			var1: 'hello from the home page!'
+			var1: 'home.js init'
 		},
 		
 		'init': function() {
 			
 			// do stuff here
-			log(this.vars.var1);
+			console.log(PB.Home.vars.var1);
 			
 		},
 		
@@ -34,4 +34,4 @@ var TL = TL || {};
 
 }());
 
-$(function() { TL.Home.init() });
+$(function() { PB.Home.init() });
