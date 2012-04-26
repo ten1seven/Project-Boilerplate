@@ -4,6 +4,11 @@
   Author: Jeremy Fields, Viget Labs
 */
 
+// remove for production!!!
+$LAB.setGlobalDefaults({
+	'CacheBust': true
+});
+
 $LAB.script('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js','js/bootstrap.js','js/bundles.js').wait(function() {
 	if (typeof window.jQuery === 'undefined') {
 		

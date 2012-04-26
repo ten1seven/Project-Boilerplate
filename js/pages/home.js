@@ -13,7 +13,7 @@ var PB = PB || {};
 	PB.Home = {
 		
 		vars: {
-			var1: 'home.js init'
+			var1: 'init home.js'
 		},
 		
 		'init': function() {

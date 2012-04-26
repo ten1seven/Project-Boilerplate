@@ -23,13 +23,13 @@ var PB = PB || {};
 	PB.Global = {
 		
 		vars: {
-			var1: 'global.js init'
+			var1: 'init global.js'
 		},
 		
 		'init': function() {
 			
 			// do stuff here
-			console.log(PB.Global.var1);
+			console.log(PB.Global.vars.var1);
 			
 		},
 		

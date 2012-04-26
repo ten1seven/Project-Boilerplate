@@ -4,12 +4,14 @@
   Author: Jeremy Fields, Viget Labs
 */
 
-var _base = {
+var base = {
 	
-	_global: [
-		'js/plugins.js',
-		'js/global.js'
-	]
+	loadfirst: {
+		url: 'js/global.js',
+		depends: [
+			'js/plugins.js'
+		]
+	}
 	
 };
 
