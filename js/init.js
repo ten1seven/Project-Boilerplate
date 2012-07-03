@@ -9,7 +9,7 @@ $LAB.setGlobalDefaults({
 	'CacheBust': true
 });
 
-$LAB.script('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js','js/bootstrap.js','js/bundles.js').wait(function() {
+$LAB.script('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/bootstrap.js','js/bundles.js').wait(function() {
 	if (typeof window.jQuery === 'undefined') {
 		
 		// first load failed, load local fallback, then dependencies  
