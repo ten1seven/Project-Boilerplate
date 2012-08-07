@@ -12,9 +12,10 @@ var PB = PB || {};
 	
 	PB.Util = {
 		
-		'init': function() {
-			
-			
+		
+		/* global init
+		========================================================================== */
+		init: function() {
 			
 		}
 		
@@ -22,18 +23,27 @@ var PB = PB || {};
 		
 	PB.Global = {
 		
+		
+		/* module variables
+		========================================================================== */
 		vars: {
 			var1: 'init global.js'
 		},
 		
-		'init': function() {
+		
+		/* global init
+		========================================================================== */
+		init: function() {
 			
 			// do stuff here
 			console.log(PB.Global.vars.var1);
 			
 		},
 		
-		'method_2': function() {
+		
+		/* internal function
+		========================================================================== */
+		method_2: function() {
 			
 			// do stuff here
 			

@@ -15,7 +15,7 @@ var PB = PB || {};
 	// function for loading the JS package
 	PB.loadScripts = function(controller,action) {
 		$LAB
-		.script([base.loadfirst.depends],base.loadfirst.url).wait() // load and run the global scripts first
-		.script([pages[controller][action].depends],pages[controller][action].url);
+			.script([base.loadfirst.depends],base.loadfirst.url).wait() // load and run the global scripts first
+			.script([pages[controller][action].depends],pages[controller][action].url);
 	};
 })();

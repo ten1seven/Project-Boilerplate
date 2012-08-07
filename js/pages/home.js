@@ -12,18 +12,27 @@ var PB = PB || {};
 		
 	PB.Home = {
 		
+		
+		/* module variables
+		========================================================================== */
 		vars: {
 			var1: 'init home.js'
 		},
 		
-		'init': function() {
+		
+		/* global init
+		========================================================================== */
+		init: function() {
 			
 			// do stuff here
 			console.log(PB.Home.vars.var1);
 			
 		},
 		
-		'method_2': function() {
+		
+		/* internal function
+		========================================================================== */
+		method_2: function() {
 			
 			// do stuff here
 			
