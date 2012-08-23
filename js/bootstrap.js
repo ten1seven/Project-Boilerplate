@@ -12,10 +12,20 @@ var PB = PB || {};
 	PB.controller = body.getAttribute('data-controller').toLowerCase();
 	PB.action = body.getAttribute('data-action').toLowerCase();
 	
-	// function for loading the JS package
+	// function for loading the JS packages
 	PB.loadScripts = function(controller,action) {
-		$LAB
-			.script([base.loadfirst.depends],base.loadfirst.url).wait() // load and run the global scripts first
-			.script([pages[controller][action].depends],pages[controller][action].url);
+		
+		Modernizr.load([
+			{
+				load: base.loadfirst.depends
+			},{
+				load: base.loadfirst.url
+			},{
+				load: pages[controller][action].depends
+			},{
+				load: pages[controller][action].url
+			}
+		]);
+		
 	};
 })();
